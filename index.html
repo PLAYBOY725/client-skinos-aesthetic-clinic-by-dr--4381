@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKINOS | Advanced Laser & Aesthetic Dermatology | Dr. Shruti Gupta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: { 50: '#fdf8f7', 500: '#c5a085', 600: '#a6856d' },
+                        dark: '#1a1a1a'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-mesh { background: radial-gradient(circle at top right, #fdf8f7, #ffffff); }
+        .faq-active .answer { display: block !important; }
+        .faq-active .icon { transform: rotate(180deg); }
+    </style>
+</head>
+<body class="bg-white text-dark font-sans antialiased">
+
+    <!-- Top Bar -->
+    <div class="bg-dark text-white text-xs py-2 px-4 text-center">
+        <span class="inline-flex items-center gap-2">
+            ⭐ 4.9★ Rated on Google (120+ Reviews) | Premium Aesthetic Care in Gurugram
+        </span>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="text-2xl font-bold font-heading tracking-tighter">SKINOS</div>
+            <div class="hidden md:flex gap-8 font-medium text-sm">
+                <a href="#services" class="hover:text-brand-500">Services</a>
+                <a href="#why" class="hover:text-brand-500">Why Us</a>
+                <a href="#contact" class="hover:text-brand-500">Location</a>
+            </div>
+            <a href="#booking" class="bg-dark text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-brand-600 transition-all">Book Consultation</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="gradient-mesh py-20 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-brand-600 font-semibold tracking-wider uppercase text-xs">Aesthetic Excellence</span>
+                <h1 class="text-5xl md:text-6xl font-heading font-bold leading-tight mt-4 mb-6">Redefining Your Natural Radiance.</h1>
+                <p class="text-gray-600 text-lg mb-8 leading-relaxed">Expert dermatological care by Dr. Shruti Gupta. Advanced laser technology meets personalized aesthetics for transformative results.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#booking" class="bg-brand-500 text-white px-8 py-4 rounded-full font-bold hover:bg-brand-600">Request Appointment</a>
+                    <a href="https://wa.me/919319224440?text=Hello%20SKINOS%20-%20Aesthetic%20Clinic%20by%20Dr.%20Shruti%20Gupta,%20I%20want%20to%20inquire%20about%20your%20services." class="border border-dark px-8 py-4 rounded-full font-bold hover:bg-gray-50">WhatsApp Us</a>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-6 bg-brand-50 rounded-2xl">
+                        <div class="text-3xl font-bold">120+</div>
+                        <div class="text-sm text-gray-600">Verified Reviews</div>
+                    </div>
+                    <div class="p-6 bg-brand-50 rounded-2xl">
+                        <div class="text-3xl font-bold">4.9★</div>
+                        <div class="text-sm text-gray-600">Google Rating</div>
+                    </div>
+                </div>
+                <div class="mt-6 text-sm text-gray-500 italic">"Highly professional, meticulous, and results-driven. My go-to for all skin concerns."</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-heading font-bold text-center mb-16">Signature Treatments</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-8 border border-gray-100 rounded-3xl hover:shadow-lg transition">
+                <h3 class="text-xl font-bold mb-4">Laser Dermatology</h3>
+                <p class="text-gray-600 text-sm mb-6">Advanced laser systems for pigmentation, scarring, and skin rejuvenation with minimal downtime.</p>
+                <span class="text-brand-600 font-bold">Starting ₹4,500</span>
+            </div>
+            <div class="p-8 border border-gray-100 rounded-3xl hover:shadow-lg transition">
+                <h3 class="text-xl font-bold mb-4">Anti-Aging & Fillers</h3>
+                <p class="text-gray-600 text-sm mb-6">Precision contouring and volume restoration performed by Dr. Shruti Gupta.</p>
+                <span class="text-brand-600 font-bold">Starting ₹15,000</span>
+            </div>
+            <div class="p-8 border border-gray-100 rounded-3xl hover:shadow-lg transition">
+                <h3 class="text-xl font-bold mb-4">VIP Skin Care</h3>
+                <p class="text-gray-600 text-sm mb-6">End-to-end bespoke treatment plans with 24/7 priority support for high-priority patients.</p>
+                <span class="text-brand-600 font-bold">Custom Quotes</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="booking" class="bg-gray-50 py-20 px-6">
+        <div class="max-w-2xl mx-auto bg-white p-10 rounded-3xl shadow-sm">
+            <h2 class="text-3xl font-heading font-bold mb-2">Book Your Consultation</h2>
+            <p class="text-gray-600 mb-8">Fill in the details and our team will get back to you shortly.</p>
+            <form id="appointmentForm" class="space-y-4">
+                <input type="text" placeholder="Full Name" required class="w-full p-4 border border-gray-200 rounded-xl">
+                <input type="tel" placeholder="Phone Number" required class="w-full p-4 border border-gray-200 rounded-xl">
+                <select class="w-full p-4 border border-gray-200 rounded-xl">
+                    <option>Laser Treatment</option>
+                    <option>General Consultation</option>
+                    <option>VIP Aesthetics</option>
+                </select>
+                <button type="submit" class="w-full bg-dark text-white py-4 rounded-xl font-bold hover:bg-brand-600">Confirm Request</button>
+            </form>
+            <div id="formFeedback" class="hidden mt-6 p-4 bg-green-50 text-green-700 rounded-xl text-center font-medium">
+                Request received! Our team will reach out within 2 hours.
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-heading font-bold mb-10 text-center">Common Questions</h2>
+        <div class="space-y-4">
+            <div class="faq-item border-b border-gray-100 pb-4">
+                <button class="w-full flex justify-between items-center py-4 font-semibold" onclick="this.parentElement.classList.toggle('faq-active')">
+                    Are the laser treatments safe?
+                    <span class="icon">▼</span>
+                </button>
+                <div class="answer hidden text-gray-600 pb-4 text-sm">Yes, we use US-FDA approved technology under strict supervision.</div>
+            </div>
+            <div class="faq-item border-b border-gray-100 pb-4">
+                <button class="w-full flex justify-between items-center py-4 font-semibold" onclick="this.parentElement.classList.toggle('faq-active')">
+                    Where is the clinic located?
+                    <span class="icon">▼</span>
+                </button>
+                <div class="answer hidden text-gray-600 pb-4 text-sm">We are located at Plot 93, Phase 5, Golf Course Road, Sector 53, Gurugram.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-400 py-16 text-center">
+        <div class="mb-8">
+            <h4 class="text-white font-bold mb-4 text-lg">SKINOS - Aesthetic Clinic</h4>
+            <p>Plot 93, Phase 5, Golf Course Road, Sector 53, Gurugram</p>
+            <p class="mt-2 text-brand-500 underline">contact@skinosaestheticclinicbydrshrutigupta.com</p>
+            <p>+91 93192 24440</p>
+        </div>
+        <p class="text-xs">&copy; 2024 SKINOS Aesthetic Clinic. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Form Handling
+        const form = document.getElementById('appointmentForm');
+        const feedback = document.getElementById('formFeedback');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            form.classList.add('hidden');
+            feedback.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
